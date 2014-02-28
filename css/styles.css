@@ -1,0 +1,239 @@
+/* GENERAL SITE LAYOUT */
+* { 
+	margin: 0px;
+	padding: 0px;
+	font-family:"Open Sans", "Arial", sans-serif;
+	font-size:16px;
+	line-height:32px;
+	color:#333;
+}
+
+body, #canvas { background:#fafafa; }
+
+div#wrapper {
+	width: 920px;
+	margin:40px auto 0px auto;
+}
+
+h1 {
+	font-size:32px;
+	color:#f03;
+	text-shadow:0px 1px #333;
+}
+
+h2 {
+	font-size:24px;
+	color:#8cf;
+	text-shadow:0px 1px #333;
+	margin-bottom:20px;
+}
+
+h3, h3 > span {
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:900;
+	margin-top:20px;
+}
+
+input {
+	padding:5px;
+}
+
+/* PRE-GAME STYLES */
+#team-options, #game-options {
+	width:49%;
+	float:left;
+	padding:20px 0px;
+}
+
+#game-options {
+	border-left:dotted #ccc 1px;
+}
+
+#team-options ul {
+	margin-left:20px;
+}
+
+#game-options > * {
+	margin-left: 40px;
+}
+
+#game-options input#period-length {
+	width:40px;
+	padding:5px;
+}
+
+#start {
+	text-align:center;
+	width:100%;
+	float:left;
+	margin-top:40px;
+}
+
+input#start-game {
+	padding:10px 20px;
+}
+
+
+/* GAME STYLES */
+#cards {
+	width:49%;
+	float:left;
+	text-align:center;
+	border-left:dotted 1px #ccc;
+}
+
+#cards > div {
+	background: #eee;
+	border-radius:5px;
+	width:90%;
+	float:right;
+	margin-bottom:40px;
+}
+
+#score-card > div {
+	float:left;
+	width:50%;
+	margin-bottom:40px;
+}
+
+#cards p.name {
+	text-transform:uppercase;
+	font-size:20px;
+	color:#999;
+	font-weight:900;
+}
+
+#cards p.score, #time-card > p, #time-card > p > span {
+	font-size:72px;
+	font-weight:100;
+	color:#555;
+	line-height:1.1em;
+}
+
+div.active {
+	border:solid 2px #3c3;
+}
+
+#cards a {
+	display:block;
+	clear:left;
+	padding:10px;
+	background: #8cf;
+	border-radius:5px;
+	margin:20px 20px 0px 20px;
+}
+
+#menu-divs {
+	width:50%;
+	float:left;
+}
+
+#menu-divs > div {
+	width:90%;
+	float:left;
+}
+
+#players > a {
+	width:100%;
+	padding:20px 0px;
+	text-indent:20px;
+	display:block;
+}
+
+#players > a.on-court {
+	background:#eee url("../images/tick.png") no-repeat 90% 50%;
+	border-bottom:solid 1px #bbb;
+	color:#000;
+}
+
+#players > a.on-bench {
+	background:#ddd;
+	border-bottom:solid 1px #eee;
+	color:#aaa;
+}
+	
+#stats {
+	float:right;
+	width:50%;
+	height:400px;
+}
+
+#stats > * {
+	border:0px;
+	border-spacing:0px;
+	margin-left:40px;
+}
+
+#stats td {
+	padding:5px;
+	font-size:14px;
+}
+	
+#stats tr:nth-child(1) {
+	font-weight:900;
+	background:#555;
+}
+
+#stats tr:last-child > td {
+	background:#fff;
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+	
+}
+
+#stats tr:nth-child(1) td {
+	color:#fff;
+}
+
+#stats tr:nth-child(even) {
+	background:#ddd;
+	color:#333;
+}
+
+#stats tr td:nth-child(1) {
+	font-weight:900;
+}
+
+#stats tr td:nth-child(n+2) {
+	text-align:center;
+}
+
+#menu {
+	float:left;
+	width:100%;
+	background:#9ce;
+}
+
+#menu-divs a {
+	padding:10px 0px;
+	width:100%;
+	float:left;
+	clear:left;
+	text-indent:20px;
+	border-bottom:solid 1px #8bd;
+}
+
+#menu-divs a.cancel {
+	background:#c33;
+	color:#fff; 
+}
+
+/*
+#menuDivs a.cancel:hover {
+	background:#b11;
+	color:#fff; 
+}
+
+#menuDivs a:hover {
+	background:#58a;
+}
+*/
+
+h4 {
+	text-indent:20px;
+	color:#fff;
+	background:#257;
+	
+}
+
